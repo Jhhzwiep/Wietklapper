@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Light green background */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Game Container */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Spacing between the panels */
+}
+
+/* Left Panel (Main Game Area) */
+.left-panel {
+    flex: 1;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #c8e6c9; /* Light green border */
+}
+
+/* WPS Counter */
+.wps {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2e7d32; /* Dark green for WPS */
+}
+
+/* Clickable Item */
+.clickable-item {
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.clickable-item img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for clickable item */
+.clickable-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Stats */
+.stats {
+    font-size: 20px;
+    margin-top: 30px;
+}
