@@ -1,42 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weed Idle Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="game-container">
-        <div class="left-panel">
-            <!-- WPS Counter -->
-            <div class="wps">
-                <p>WPS: <span id="wps-count">0</span></p>
-            </div>
-            
-            <!-- Clickable Item (Weed Plant) -->
-            <div class="clickable-item" id="weed-item">
-                <img src="images/weed-plant.png" alt="Weed Plant">
-            </div>
-            
-            <!-- Stats (Total Weed) -->
-            <div class="stats">
-                <p>Total Weed: <span id="weed-count">0</span></p>
-            </div>
-        </div>
+<div class="game">
 
-        <!-- Store Panel -->
-        <div class="right-panel">
-            <h2>Store</h2>
-            <div class="store-item" id="grower">
-                <p>Hire Grower (Cost: 50 Weed)</p>
-            </div>
-            <div class="store-item" id="greenhouse">
-                <p>Buy Greenhouse (Cost: 200 Weed)</p>
-            </div>
-        </div>
+  <!-- /////////// -->
+  <!-- Fishing rod -->
+  <!-- /////////// -->
+
+  <div class="fishing-rod">
+    <img class="fill-container" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-fishing-rod.svg" alt="">
+    <canvas class="reel-line-tension" data-element="reel-line-tension"></canvas>
+    <div class="reel-handle">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-reel-handle.svg" alt="">
     </div>
+    <div class="reel-line"></div>
+  </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <!-- ///////// -->
+  <!-- Game body -->
+  <!-- ///////// -->
+
+  <div class="game-body">
+    <img class="fill-container" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-game-body-bg.svg" alt="">
+    <canvas class="bubbles" data-element="bubbles"></canvas>
+    <canvas class="seaweed" data-element="seaweed"></canvas>
+    <img class="seafloor fill-container" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-sea-floor.svg" alt="">
+    <div class="fish">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-fish.svg" alt="">
+    </div>
+    <div class="indicator">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-indicator.svg" alt="">
+    </div>
+    <img class="glass fill-container" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-glass.svg" alt="">
+  </div>
+
+  <!-- //////////// -->
+  <!-- Progress bar -->
+  <!-- //////////// -->
+
+  <div class="progress-bar">
+    <img class="fill-container" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-progress-bar-bg.svg" alt="">
+    <div class="progress-gradient-wrapper">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-progress-gradient.svg" class="progress-gradient" alt="">
+    </div>
+  </div>
+
+</div>
+<!-- .game -->
+
+<!-- /////// -->
+<!-- Success -->
+<!-- /////// -->
+
+<div class="success">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-nice-catch.png" alt="" class="nice-catch">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-perfect.png" alt="" class="perfect">
+</div>
